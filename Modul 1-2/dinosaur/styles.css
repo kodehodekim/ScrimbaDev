@@ -1,0 +1,31 @@
+/* Styles */
+
+body {
+  margin: 0;
+}
+header {
+  background-color: #4a4a4a;
+  color: azure;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+}
+
+main {
+  background-color: #e4e4e4;
+  width: 685px;
+  padding: 25px;
+  border: solid 5px red;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: azure;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 25px;
+}
