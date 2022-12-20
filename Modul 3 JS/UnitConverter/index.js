@@ -3,13 +3,10 @@
 // Grabbing ID's from HTML
 const inputField = document.getElementById("input");
 const convertButton = document.getElementById("convertButton");
-// Length - Meter / Feet
 const metertoFeetEl = document.getElementById("meterToFeetElement");
 const feetToMeterEl = document.getElementById("feetToMeterElement");
-// Volume - Liters / Gallons
 const literToGallonEl = document.getElementById("litersToGallonsElement");
 const gallonsToLitresEl = document.getElementById("gallonsToLitresElement");
-// Mass - Kilo / Pound
 const kiloToPoundEl = document.getElementById("kiloToPoundElement");
 const poundToKiloEl = document.getElementById("poundsToKiloElement");
 
@@ -19,19 +16,22 @@ inputField.addEventListener("keypress", function (event) {
     document.getElementById("convertButton").click();
   }
 });
-// EventListener for click on button and change the HTML.
+// EventListener for click on button to calculate and change the HTML.
 convertButton.addEventListener("click", function () {
   // Calculations
   const meterToFeet = 3.281;
   const literToGallon = 0.264;
   const kgToPound = 2.204;
   const baseValue = inputField.value;
+
   // Meter to feet - Feet to meter
   const meterFeet = (baseValue * meterToFeet).toFixed(2);
   const feetMeter = (baseValue / meterToFeet).toFixed(2);
+
   // Liter to gallons - Gallons to liters
   const litersGallon = (baseValue * literToGallon).toFixed(2);
   const gallonLiters = (baseValue / literToGallon).toFixed(2);
+
   // Kilos to Pounds - Pounds to Kilos
   const kiloPounds = (baseValue * kgToPound).toFixed(2);
   const poundKilo = (baseValue / kgToPound).toFixed(2);
