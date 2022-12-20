@@ -22,30 +22,30 @@ convertButton.addEventListener("click", function () {
   const meterToFeet = 3.281;
   const literToGallon = 0.264;
   const kgToPound = 2.204;
-  const baseValue = inputField.value;
+  const inputValue = inputField.value;
 
   // Meter to feet - Feet to meter
-  const meterFeet = (baseValue * meterToFeet).toFixed(2);
-  const feetMeter = (baseValue / meterToFeet).toFixed(2);
+  const meterFeet = (inputValue * meterToFeet).toFixed(2);
+  const feetMeter = (inputValue / meterToFeet).toFixed(2);
 
   // Liter to gallons - Gallons to liters
-  const litersGallon = (baseValue * literToGallon).toFixed(2);
-  const gallonLiters = (baseValue / literToGallon).toFixed(2);
+  const litersGallon = (inputValue * literToGallon).toFixed(2);
+  const gallonLiters = (inputValue / literToGallon).toFixed(2);
 
   // Kilos to Pounds - Pounds to Kilos
-  const kiloPounds = (baseValue * kgToPound).toFixed(2);
-  const poundKilo = (baseValue / kgToPound).toFixed(2);
+  const kiloPounds = (inputValue * kgToPound).toFixed(2);
+  const poundKilo = (inputValue / kgToPound).toFixed(2);
 
   // Calculations pushed to HTML.
   // Meter to feet and reversed.
-  metertoFeetEl.textContent = `${baseValue} Meters = ${meterFeet} Feet.`;
-  feetToMeterEl.textContent = `${baseValue} Feet = ${feetMeter} Meters.`;
+  metertoFeetEl.textContent = `${inputValue} Meters = ${meterFeet} Feet.`;
+  feetToMeterEl.textContent = `${inputValue} Feet = ${feetMeter} Meters.`;
 
   // Liters to Gallons and reversed.
-  literToGallonEl.textContent = `${baseValue} Liters = ${litersGallon} Gallons`;
-  gallonsToLitresEl.textContent = `${baseValue} Gallons = ${gallonLiters} Liters.`;
+  literToGallonEl.textContent = `${inputValue} Liters = ${litersGallon} Gallons`;
+  gallonsToLitresEl.textContent = `${inputValue} Gallons = ${gallonLiters} Liters.`;
 
   // Kilo to pound and reversed.
-  kiloToPoundEl.textContent = `${baseValue} Kilo = ${kiloPounds} Pounds.`;
-  poundToKiloEl.textContent = `${baseValue} Pounds = ${poundKilo} Kilo.`;
+  kiloToPoundEl.textContent = `${inputValue} Kilo = ${kiloPounds} Pounds.`;
+  poundToKiloEl.textContent = `${inputValue} Pounds = ${poundKilo} Kilo.`;
 });
